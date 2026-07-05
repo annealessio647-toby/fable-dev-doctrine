@@ -1,13 +1,13 @@
 {
-  "name": "fable-dev-doctrine",
+  "name": "fable5",
   "owner": {
     "name": "Lu"
   },
   "plugins": [
     {
-      "name": "fable-dev-doctrine",
+      "name": "fable5",
       "source": "./",
-      "description": "Fable 5's operating doctrine: evidence-loop, delegate-verify, ratchet-discipline, plus a hardware bench profile."
+      "description": "Fable 5's operating doctrine: evidence, delegate, ratchet, plus a hardware bench profile."
     }
   ]
 }

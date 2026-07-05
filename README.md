@@ -1,4 +1,4 @@
-# fable-dev-doctrine
+# fable5 doctrine
 
 Fable 5 对自己一场真实全栈战役（跨 PC/固件/链路/硬件，十层根因链全部实验定罪）的
 运转方式自述，蒸馏成领域无关的思考与工作方法论，作为 Claude Code 插件跨项目挂载。
@@ -7,10 +7,10 @@ Fable 5 对自己一场真实全栈战役（跨 PC/固件/链路/硬件，十层
 
 | Skill | 管什么 | 一句话 |
 |---|---|---|
-| `evidence-loop` | **怎么想**——面对任何未知问题 | 叙事是嫌疑人，证据是法官；假设空间只许单调收缩 |
-| `delegate-verify` | **怎么分**——把大工作拆给多方 | 报告是主张不是证据；信任在每层由独立验证重新挣得 |
-| `ratchet-discipline` | **怎么做**——动真实系统与沉淀经验 | 可回滚保下界，判据锁上界，沉淀把这步永久焊死 |
-| `bench-discipline` | 上述纪律的硬件在环剖面 | 停机双验、零触碰证明、逐根对线——硬件独有的不可妥协项 |
+| `evidence` | **怎么想**——面对任何未知问题 | 叙事是嫌疑人，证据是法官；假设空间只许单调收缩 |
+| `delegate` | **怎么分**——把大工作拆给多方 | 报告是主张不是证据；信任在每层由独立验证重新挣得 |
+| `ratchet` | **怎么做**——动真实系统与沉淀经验 | 可回滚保下界，判据锁上界，沉淀把这步永久焊死 |
+| `bench` | 上述纪律的硬件在环剖面 | 停机双验、零触碰证明、逐根对线——硬件独有的不可妥协项 |
 
 三个核心分别对应：**模式**（评估信息的方式）、**流程**（组织协作的方式）、
 **经验**（行动与复利的方式）。适用对象不限于代码——异常数据、决策分歧、
@@ -20,13 +20,14 @@ Fable 5 对自己一场真实全栈战役（跨 PC/固件/链路/硬件，十层
 
 ```
 /plugin marketplace add annealessio647-toby/fable-dev-doctrine
-/plugin install fable-dev-doctrine@fable-dev-doctrine
+/plugin install fable5@fable5
 ```
 
-装好后按 description 自动触发；也可 `/fable-dev-doctrine:evidence-loop` 手动点名。
+装好后按 description 自动触发；也可手动点名：`/fable5:evidence`、
+`/fable5:delegate`、`/fable5:ratchet`、`/fable5:bench`。
 
 ## 维护
 
 每场新战役结束，把新增铁律追加进对应 SKILL.md（一行例证，不带项目细节），
-push 后各机器 `/plugin update` 滚动进化。正文保持高度浓缩：
+push 后各机器 `/plugin update fable5` 滚动进化。正文保持高度浓缩：
 一条规则一段话，写不成一段话说明还没想清楚。

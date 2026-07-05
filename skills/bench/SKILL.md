@@ -1,13 +1,13 @@
 ---
-name: bench-discipline
-description: 通用纪律在硬件在环场景的应用剖面——涉及转动机构、固件烧录、共享固件改动、实物接线时的安全底线。通用方法见 evidence-loop / ratchet-discipline，本 skill 只放硬件独有的不可妥协项。
+name: bench
+description: 通用纪律在硬件在环场景的应用剖面——涉及转动机构、固件烧录、共享固件改动、实物接线时的安全底线。通用方法见 evidence / ratchet，本 skill 只放硬件独有的不可妥协项。
 ---
 
 # 台架剖面（Bench Profile）
 
 硬件的特殊之处：错误会伤人、烧板、丢不可再采的数据。以下是**不可妥协项**，
-通用流程（判据先行、状态复原、哨兵指标、双份沉淀）见 `ratchet-discipline`，
-排障方法见 `evidence-loop`。
+通用流程（判据先行、状态复原、哨兵指标、双份沉淀）见 `ratchet`，
+排障方法见 `evidence`。
 
 ## 转动机构
 

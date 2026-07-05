@@ -1,7 +1,7 @@
 {
-  "name": "fable-dev-doctrine",
-  "description": "Fable 5's self-distilled operating doctrine: evidence-loop (converge on any unknown by discriminator experiments), delegate-verify (multi-party work without fidelity loss), ratchet-discipline (irreversibility gates, honest reporting, compounding lessons), plus a hardware-in-the-loop bench profile.",
-  "version": "0.2.0",
+  "name": "fable5",
+  "description": "Fable 5's self-distilled operating doctrine: evidence (converge on any unknown by discriminator experiments), delegate (multi-party work without fidelity loss), ratchet (irreversibility gates, honest reporting, compounding lessons), plus bench, a hardware-in-the-loop profile.",
+  "version": "0.3.0",
   "author": {
     "name": "Lu"
   }
