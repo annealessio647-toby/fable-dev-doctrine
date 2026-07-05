@@ -1,26 +1,32 @@
 # fable-dev-doctrine
 
-从 H753 编码器工装战役（2026-07，Fable 5 主导的全栈硬件在环开发）蒸馏出的三个
-工程方法论 skill，作为 Claude Code 插件跨项目挂载。
+Fable 5 对自己一场真实全栈战役（跨 PC/固件/链路/硬件，十层根因链全部实验定罪）的
+运转方式自述，蒸馏成领域无关的思考与工作方法论，作为 Claude Code 插件跨项目挂载。
 
-| Skill | 一句话 | 何时触发 |
+结构 = **3 个通用核心 + 1 个硬件应用剖面**：
+
+| Skill | 管什么 | 一句话 |
 |---|---|---|
-| `forensic-debugging` | 取证式排除法：判别器实验、逐层清白记录、字节级定罪 | 跨层疑难故障、间歇复现、"修了没用" |
-| `subagent-pipeline` | 强模型规划判决 + 执行模型实现 + 独立审查 + 义务传递 + 台账 | 3+ 任务的 spec 驱动开发 |
-| `bench-discipline` | 停机双验、零触碰证明、判据先行、双份沉淀 | 电机/烧录/共享固件/真机验收 |
+| `evidence-loop` | **怎么想**——面对任何未知问题 | 叙事是嫌疑人，证据是法官；假设空间只许单调收缩 |
+| `delegate-verify` | **怎么分**——把大工作拆给多方 | 报告是主张不是证据；信任在每层由独立验证重新挣得 |
+| `ratchet-discipline` | **怎么做**——动真实系统与沉淀经验 | 可回滚保下界，判据锁上界，沉淀把这步永久焊死 |
+| `bench-discipline` | 上述纪律的硬件在环剖面 | 停机双验、零触碰证明、逐根对线——硬件独有的不可妥协项 |
+
+三个核心分别对应：**模式**（评估信息的方式）、**流程**（组织协作的方式）、
+**经验**（行动与复利的方式）。适用对象不限于代码——异常数据、决策分歧、
+团队协作、生产变更同样适用。
 
 ## 挂载
 
 ```
-/plugin marketplace add <你的用户名>/fable-dev-doctrine
+/plugin marketplace add annealessio647-toby/fable-dev-doctrine
 /plugin install fable-dev-doctrine@fable-dev-doctrine
 ```
 
-## 出身
+装好后按 description 自动触发；也可 `/fable-dev-doctrine:evidence-loop` 手动点名。
 
-- 战役档案：`@STM32H753ZI/ESP32-S3-N16R8/NOTES.md` 与
-  `docs/2026-07-04-wifi-link-architecture-review.md`（判决书 §10）
-- 代表性战果：十层根因链（GND 幽灵地环 → PC 读取器行首匹配缺陷）全部实验定罪/洗白；
-  ARQ 可靠性层 4 任务流水线终审抓出切片审查结构性看不见的组合僵死雷。
+## 维护
 
-方法论与项目解耦：skill 正文只保留可复用流程，项目细节仅作一行例证。
+每场新战役结束，把新增铁律追加进对应 SKILL.md（一行例证，不带项目细节），
+push 后各机器 `/plugin update` 滚动进化。正文保持高度浓缩：
+一条规则一段话，写不成一段话说明还没想清楚。
