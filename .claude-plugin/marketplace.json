@@ -1,0 +1,13 @@
+{
+  "name": "fable-dev-doctrine",
+  "owner": {
+    "name": "Lu"
+  },
+  "plugins": [
+    {
+      "name": "fable-dev-doctrine",
+      "source": "./",
+      "description": "Forensic debugging, subagent pipeline orchestration, and hardware bench discipline."
+    }
+  ]
+}
